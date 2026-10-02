@@ -1,0 +1,43 @@
+{
+  "schemaVersion": 1,
+  "id": "ui-scaler",
+  "name": "Stranded Deep UI Scaler",
+  "version": "0.3.0",
+  "artifactBaseName": "StrandedDeepUIScaler",
+  "type": "mod",
+  "category": "interface",
+  "description": "Увеличивает слишком мелкий интерфейс Stranded Deep, включая local split-screen.",
+  "packagePaths": [
+    "BepInEx/plugins/StrandedDeepUIScaler"
+  ],
+  "ownedPaths": [
+    "BepInEx/plugins/StrandedDeepUIScaler"
+  ],
+  "install": {
+    "restartRequired": true
+  },
+  "dependencies": [
+    {
+      "id": "bepinex",
+      "required": true
+    }
+  ],
+  "optionalDependencies": [
+    {
+      "id": "mod-settings",
+      "minimumVersion": "0.2.0"
+    }
+  ],
+  "conflicts": [],
+  "persistence": {
+    "usesBepInExConfig": true,
+    "usesGameSave": false,
+    "usesSidecarData": false,
+    "backupBeforeUpdate": false
+  },
+  "publishing": {
+    "repository": "stranded-deep-ui-scaler",
+    "tag": "v0.3.0",
+    "releaseChannel": "stable"
+  }
+}

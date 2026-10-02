@@ -1,0 +1,6 @@
+StrandedDeepUIScaler v0.3.0
+- First shared Mod Settings API client.
+- Added soft optional integration through vendored SDK/ModSettingsClient.cs.
+- Removed F6/F7/F8 user hotkeys.
+- Scale remains owned by UI Scaler BepInEx ConfigEntry.
+- Runtime scaling still targets PlayerUI(Clone)/Canvas - Game only.
