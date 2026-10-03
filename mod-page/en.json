@@ -1,0 +1,39 @@
+{
+  "schemaVersion": 1,
+  "locale": "en",
+  "subtitle": "Larger, more readable UI for local split-screen.",
+  "description": "Scales up Stranded Deep's small interface, including local split-screen, so the HUD, inventory, crafting and prompts remain readable on a divided screen.",
+  "features": [
+    "Scales the interface for both local split-screen players.",
+    "Improves readability of HUD elements, text, icons and interaction prompts.",
+    "Applies to inventory, crafting and quick crafting UI.",
+    "Does not require lowering the game resolution just to make the interface larger.",
+    "The selected scale is owned and stored by UI Scaler itself.",
+    "An in-game scale slider is available through Mod Settings.",
+    "The tested Mod Settings integration presents 100–200% for an internal 1.0–2.0 scale range."
+  ],
+  "screenshotCaptions": {},
+  "faq": [
+    {
+      "question": "What is the main use case?",
+      "answer": "Local split-screen, where the vanilla UI for each player becomes significantly smaller."
+    },
+    {
+      "question": "Which UI areas are affected?",
+      "answer": "HUD, interaction prompts, inventory, crafting, quick crafting, interface text and icons."
+    },
+    {
+      "question": "Do I need to lower the screen resolution?",
+      "answer": "No. The mod addresses readability through UI scale rather than game resolution."
+    },
+    {
+      "question": "Can the scale be changed in-game?",
+      "answer": "Yes. With Mod Settings installed, UI Scaler exposes an in-game slider."
+    },
+    {
+      "question": "Which mod owns the scale value?",
+      "answer": "UI Scaler itself. Mod Settings only renders the control and calls the client's getter/setter."
+    }
+  ],
+  "changelog": []
+}

@@ -1,0 +1,26 @@
+{
+  "schemaVersion": 1,
+  "id": "ui-scaler",
+  "defaultLocale": "en",
+  "locales": {
+    "en": "en.json",
+    "ru": "ru.json"
+  },
+  "media": {
+    "cover": "media/cover.jpg",
+    "screenshots": []
+  },
+  "tags": [
+    "ui",
+    "ui_scaling",
+    "split_screen",
+    "settings",
+    "quality_of_life"
+  ],
+  "highlights": [
+    "ui",
+    "ui_scaling",
+    "split_screen",
+    "ingame_settings"
+  ]
+}
