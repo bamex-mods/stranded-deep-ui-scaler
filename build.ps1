@@ -1,6 +1,12 @@
+param(
+    [string]$GameRoot = $env:STRANDED_DEEP_GAME_ROOT
+)
+
 $ErrorActionPreference = "Stop"
 
-$GameRoot = "F:\SteamLibrary\steamapps\common\Stranded Deep"
+if ([string]::IsNullOrWhiteSpace($GameRoot)) {
+    throw "GameRoot was not supplied. Pass -GameRoot or set STRANDED_DEEP_GAME_ROOT."
+}
 $Managed = Join-Path $GameRoot "Stranded_Deep_Data\Managed"
 $BepInExCore = Join-Path $GameRoot "BepInEx\core"
 $Compiler = "C:\Windows\Microsoft.NET\Framework64\v4.0.30319\csc.exe"
@@ -35,7 +41,7 @@ foreach ($Ref in $Refs) { $Args.Add("/reference:$Ref") }
 $Args.Add($ScalerSource)
 $Args.Add($ClientSource)
 
-Write-Host "=== BUILD StrandedDeepUIScaler v0.3.0 ==="
+Write-Host "=== BUILD StrandedDeepUIScaler v0.3.1 ==="
 Write-Host "Workspace: $PSScriptRoot"
 Write-Host "IMPORTANT: no compile reference to StrandedDeepModSettings.dll"
 Write-Host "References: $($Refs.Count)"

@@ -11,7 +11,7 @@ namespace StrandedDeepUIScaler
     [BepInPlugin(
         "com.bamex.strandeddeep.uiscaler",
         "Stranded Deep UI Scaler",
-        "0.3.0")]
+        "0.3.1")]
     [BepInDependency(
         "com.bamex.strandeddeep.modsettings",
         BepInDependency.DependencyFlags.SoftDependency)]
@@ -41,7 +41,7 @@ namespace StrandedDeepUIScaler
             ClampScale();
 
             Logger.LogInfo(
-                "Stranded Deep UI Scaler v0.3.0 loaded.");
+                "Stranded Deep UI Scaler v0.3.1 loaded.");
 
             Logger.LogInfo(
                 "UI scale is configured through Settings -> MODS when Stranded Deep Mod Settings is installed.");
@@ -86,21 +86,24 @@ namespace StrandedDeepUIScaler
                 return;
 
             bool modOk =
-                ModSettingsClient.RegisterMod(
+                ModSettingsClient.RegisterModLocalized(
                     "uiscaler",
                     "Интерфейс",
+                    "Interface",
                     100);
 
             bool sliderOk =
-                ModSettingsClient.AddSlider(
+                ModSettingsClient.AddSliderLocalized(
                     "uiscaler",
                     "scale",
                     "Масштаб интерфейса",
+                    "UI Scale",
                     100,
                     1.0f,
                     2.0f,
                     0.1f,
                     100.0f,
+                    "%",
                     "%",
                     0,
                     GetScale,

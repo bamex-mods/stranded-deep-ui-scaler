@@ -1,3 +1,10 @@
+v0.3.1
+------
+- Added RU/EN localized Mod Settings registration through ModSettingsClient v0.3 API.
+- Russian game UI: INTERFACE/UI Scale are rendered in Russian equivalents.
+- English/non-Russian game UI: INTERFACE / UI Scale.
+- Core scaling behavior is unchanged.
+- Mod Settings remains a SoftDependency.
 StrandedDeepUIScaler v0.3.0
 - First shared Mod Settings API client.
 - Added soft optional integration through vendored SDK/ModSettingsClient.cs.
